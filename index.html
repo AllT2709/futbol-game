@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <script  src="main.js" type="module"></script>
+    
+</head>
+<body>
+    <canvas id="myCanvas" class="myCanvas"  width="360" height="640"></canvas>
+
+    <audio id="ballSound">
+        <source src="./effects/ball.wav" type="audio/wav" >
+    </audio>
+    <audio id="buttomSound">
+        <source src="./effects/spawn2.wav" type="audio/wav" >
+    </audio>
+    <audio id="failSound">
+        <source src="./effects/fail.wav" type="audio/wav" >
+    </audio>
+    <audio id="touchSound">
+        <source src="./effects/ball3.mp3" type="audio/mpeg" >
+    </audio>
+
+    <h1 id="score1" class="score">0</h1>
+    <div class="content-start" id="content-start">
+        <figure>
+            <img class="desciption" src="./img/descriptionStart.png" alt="description">
+            <img class="content-start-buttton" id="button-start" src="./img/buttonStart.png" alt="start">
+        </figure>
+    </div>
+
+    <div class="content-over" id="content-over">
+        <div class="content-over-banner" id="content-over-banner">
+            <img src="./img/taleOver.png" alt="tale over">
+        </div>
+        <h1  id="score">0</h1>
+        <img src="./img/buttonAgain.png" alt="again" class="content-over-again" id="button-again">
+
+        <!-- <input type="button" value="Again" class="content-over-again" id="button-again"> -->
+    </div>
+    
+    
+    <!-- <script  src="scripts/score.js"></script>
+    <script  src="scripts/ball.js"></script>
+    <script  src="scripts/index.js"></script>
+    <script  src="scripts/vectors.js"></script> -->
+    <!-- <script  src="main.js" type="module"></script> -->
+</body>
+</html>
